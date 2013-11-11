@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{4D97730B-82F9-BF5F-05C1-BB51EE3B5033}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_5;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Classes\AppMaster.cs" />
+     <Compile Include="Assets\Classes\Game.cs" />
+     <Compile Include="Assets\Classes\GenericsSingleton.cs" />
+     <Compile Include="Assets\Classes\Implement\ClassRegister.cs" />
+     <Compile Include="Assets\Classes\Implement\Handler.cs" />
+     <Compile Include="Assets\Classes\Implement\NetInfo\EncryptInfo.cs" />
+     <Compile Include="Assets\Classes\Implement\NetInfo\RepLoginInfo.cs" />
+     <Compile Include="Assets\Classes\Implement\Sender.cs" />
+     <Compile Include="Assets\Classes\Implement\SocketManager\CommonSocketManager.cs" />
+     <Compile Include="Assets\Classes\Implement\SocketManager\LoginSocketManager.cs" />
+     <Compile Include="Assets\Classes\Implement\SocketManager\SocketManager.cs" />
+     <Compile Include="Assets\Classes\Net\NetClientPriorityMgr.cs" />
+     <Compile Include="Assets\Classes\Net\NetConverter.cs" />
+     <Compile Include="Assets\Classes\Net\TextEncode.cs" />
+     <Compile Include="Assets\Classes\Net\YwEncrypt.cs" />
+     <Compile Include="Assets\Classes\NetSocket\ByteArray.cs" />
+     <Compile Include="Assets\Classes\NetSocket\CBoard.cs" />
+     <Compile Include="Assets\Classes\NetSocket\CPlug.cs" />
+     <Compile Include="Assets\Classes\NetSocket\CSocket.cs" />
+     <Compile Include="Assets\Classes\NetSocket\CSocketManager.cs" />
+     <Compile Include="Assets\Classes\NetSocket\CTMF.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\Protocols\appdef.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\Protocols\c2fep.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\Protocols\c2ls.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\Protocols\c2ss.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\Protocols\c2ws.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\Protocols\fep2c.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\Protocols\ls2c.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\Protocols\packetdef.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\Protocols\serverdef.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\Protocols\ss2c.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\Protocols\ws2c.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\area_resource_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\aura_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\char_data\char_area_resource_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\char_data\char_city_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\char_data\char_setting_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\character_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\chat_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\city\area_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\city\build_base_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\city\citys_cache_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\city\citys_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\hero_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\hero_palace_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\instance_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\item\base_item_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\item\item_shop_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\login_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\map_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\mate_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\monster_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\relation_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\scene_def.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\typedef.cs" />
+     <Compile Include="Assets\Classes\NetworkProtocol\include\unit_def.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
